@@ -11,8 +11,8 @@ body {
 }
 
 #game-container {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
 }
 
 #game-container iframe {
