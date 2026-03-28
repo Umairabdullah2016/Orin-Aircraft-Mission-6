@@ -14,7 +14,7 @@ html, body {
 #game-container {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 1200px;
     background: black;
 }
 
