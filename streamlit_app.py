@@ -17,7 +17,7 @@ body {
 
 #game-container iframe {
     width: 100%;
-    height: 1400px;  /* KEY FIX */
+    height: 1600px;  /* KEY FIX */
     border: none;
 }
 </style>
@@ -31,4 +31,4 @@ body {
 </div>
 """
 
-components.html(html_code, height=1400)
+components.html(html_code, height=1600)
