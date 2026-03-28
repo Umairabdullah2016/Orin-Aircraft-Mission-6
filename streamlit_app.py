@@ -31,4 +31,4 @@ body {
 </div>
 """
 
-components.html(html_code, height=1100)
+components.html(html_code, height=1200)
