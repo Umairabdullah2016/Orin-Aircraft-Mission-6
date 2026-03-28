@@ -5,30 +5,37 @@ st.set_page_config(layout="wide")
 
 html_code = """
 <style>
-#game-container {
-    position: relative;
+#wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 85vh;   /* enough space for controls */
-    background: black;
+    height: 95vh;
+    background: #000;
 }
 
-#game-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+#game {
     width: 100%;
-    height: 100%;   /* critical: NOT 200% */
+    height: 100%;
+    max-width: 900px;   /* keeps aspect ratio nice */
+}
+
+#game iframe {
+    width: 100%;
+    height: 100%;
     border: none;
 }
 </style>
 
-<div id="game-container">
-    <iframe 
-        src="https://arcade.makecode.com/---run?id=S87889-51924-82524-20479"
-        allowfullscreen
-        sandbox="allow-popups allow-forms allow-scripts allow-same-origin">
-    </iframe>
+<div id="wrap">
+    <div id="game">
+        <iframe 
+            src="https://arcade.makecode.com/---run?id=S87889-51924-82524-20479"
+            allowfullscreen
+            sandbox="allow-popups allow-forms allow-scripts allow-same-origin">
+        </iframe>
+    </div>
 </div>
 """
 
-components.html(html_code, height=750)
+components.html(html_code, height=900)
